@@ -13,7 +13,7 @@ let helpText = `
 `
 var data = {}
 const fs = require('fs')
-const owner_id = 
+const owner_id = 213117847436656650
 // global.discord = Discord
 
 const client = new Discord.Client();
