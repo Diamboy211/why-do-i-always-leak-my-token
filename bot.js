@@ -13,7 +13,8 @@ let helpText = `
 `
 var data = {}
 const fs = require('fs')
-global.discord = Discord
+const owner_id = 
+// global.discord = Discord
 
 const client = new Discord.Client();
 
@@ -147,14 +148,14 @@ client.on('message', message => {
 	} else if (instr[0] === "!help") {
 		send(ch, helpText)
 	} else if (instr[0] === "!cld") {
-		if (message.author.id == 213117847436656650) {
+		if (message.author.id == owner_id) {
 			data = {}
 			send(ch, "cleared database")
 		} else {
 			send(ch, "https://tenor.com/view/your-not-my-dad-gif-8300190")
 		}
 	} else if (instr[0] === "!ldd") {
-		if (message.author.id == 213117847436656650) {
+		if (message.author.id == owner_id) {
 			let d = fs.readFileSync("./.data", "utf8", (err) => {
 				if (err) {
 					console.log("error " + err)
@@ -166,7 +167,7 @@ client.on('message', message => {
 			send(ch, "https://tenor.com/view/your-not-my-dad-gif-8300190")
 		}
 	} else if (instr[0] === "!svd") {
-		if (message.author.id == 213117847436656650) {
+		if (message.author.id == owner_id) {
 			let d = datastore(data)
 			fs.writeFileSync("./.data", d, "utf8", (err) => {
 				if (err) {
