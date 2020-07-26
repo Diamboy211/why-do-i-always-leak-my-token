@@ -3,7 +3,7 @@ source code for diamboy's game bot, please dont leak the token again
 
 ## how to use
 add an auth.json at the same directory as the bot.js
-add these in the file:
+add this in the file:
 ```
 {
   "token": "your bot token here"
