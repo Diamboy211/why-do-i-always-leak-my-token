@@ -3,6 +3,7 @@ source code for diamboy's game bot, please dont leak the token again
 
 ## how to use
 add an auth.json at the same directory as the bot.js
+
 add this in the file:
 ```
 {
@@ -10,5 +11,7 @@ add this in the file:
 }
 ```
 if you want to save your variable database, send "!svd", it will be saved in a file named ".data"
+
 if you want to load your saved variable database, send "!ldd"
+
 make sure to change the user snowflake to your user snowflake
